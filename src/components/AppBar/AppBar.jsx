@@ -1,13 +1,13 @@
 import s from './AppBar.module.css';
 import { useState, useEffect } from 'react';
+import FetchCurrency from 'components/FetchCurrency/FetchCurrency';
 
 export default function AppBar() {
   const [allCurrency, setAllCurrency] = useState([]);
 
-  const getCurrency = () => {
-    const currency = window.localStorage.getItem('allCurrency');
-
-    return setAllCurrency(JSON.parse(currency));
+  const getCurrency = async () => {
+    const r = await FetchCurrency();
+    return setAllCurrency(r);
   };
 
   useEffect(() => {

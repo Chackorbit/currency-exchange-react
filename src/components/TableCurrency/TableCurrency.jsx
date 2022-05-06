@@ -15,7 +15,6 @@ function TableCurrency() {
 
   const getCurr = async () => {
     const r = await FetchCurrency();
-    window.localStorage.setItem('allCurrency', JSON.stringify(r));
     setFirstCurrency(r[0]);
     setSecondCurrency(r[0]);
     return setAllCurrency(r);
