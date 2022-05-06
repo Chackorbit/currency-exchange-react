@@ -18,7 +18,7 @@ export default function AppBar() {
       <header className={s.header}>
         <p className={s.p}>Текущий курс валют к гривне</p>
         <ul className={s.list}>
-          {allCurrency.slice(0, 2).map(currency => {
+          {allCurrency?.slice(0, 2).map(currency => {
             return (
               <li key={currency.ccy} className={s.item}>
                 <span className={s.currency}>{currency.ccy}</span>
