@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  max-width: 650px;
+  height: 70px;
+  background-color: rgb(58, 218, 200);
+}
+.p {
+  margin-top: auto;
+  margin-right: 30px;
+  margin-bottom: auto;
+  padding: 10px;
+}
+.list {
+  max-width: 450px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+
+  gap: 30px;
+}
+
+.item {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 5px;
+  background: rgb(95, 244, 115);
+
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+}
+
+.currency {
+  font-weight: 600;
+}
+@media screen and (max-width: 525px) {
+  .vis {
+    display: none;
+  }
+}
