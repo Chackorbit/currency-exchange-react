@@ -2,6 +2,7 @@ import AppBar from './AppBar/AppBar';
 import TableCurrency from './TableCurrency/TableCurrency';
 import Footer from './Footer/Footer';
 import s from './App.module.css';
+
 export const App = () => {
   return (
     <>
