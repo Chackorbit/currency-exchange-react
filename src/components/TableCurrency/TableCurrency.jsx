@@ -3,8 +3,6 @@ import { useState, useEffect } from 'react';
 import s from './TableCurrency.module.css';
 
 function TableCurrency() {
-  const onSubmit = data => console.log(data);
-
   const [currentCurrency, setCurrentCurrency] = useState('UAH');
   const [secondCurrentCurrency, setSecondCurrentCurrency] = useState('UAH');
 
@@ -49,6 +47,7 @@ function TableCurrency() {
 
     setSecondValue(math);
   };
+
   const onSetSecondCurr = e => {
     setSecondValue(e.target.value);
 
@@ -114,6 +113,7 @@ function TableCurrency() {
   return (
     <div className={s.container}>
       <h2>Выберете валюту для обмена</h2>
+
       <form className={s.form}>
         <select className={s.select} onChange={onFirstExchanged}>
           <option value="UAH">UAH</option>
